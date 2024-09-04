@@ -90,8 +90,8 @@ if (!page && !html && !article) {
     document.querySelector(".mainwrapper").innerHTML += out
   })
 } else if (page == 'blog') {
-    document.querySelector(".mainwrapper").innerHTML = '<h1 class="novelpage__title titles"></h1><div class="novelpage__inner"><section class="novelpage__main"></section></div>'
-    document.querySelector(".novelpage__title").innerText = '활동 기록'
+    document.querySelector(".mainwrapper").innerHTML = '<h1 class="novelpage__title titles headingL"></h1><div class="novelpage__inner"><section class="novelpage__main"></section></div>'
+    document.querySelector(".novelpage__title").innerHTML = '<i class="las la-chess-queen"></i>Blog'
     if (category) {
         document.querySelector(".novelpage__title").innerText += '/'+category
     } 
@@ -141,7 +141,7 @@ if (!page && !html && !article) {
         }
     })
 } else if (article) {
-    document.querySelector(".mainwrapper").innerHTML = '<h1 class="novelpage__title titles"></h1><div class="novelpage__inner"><section class="novelpage__main"></section></div>'
+    document.querySelector(".mainwrapper").innerHTML = '<h1 class="novelpage__title titles headingL"></h1><div class="novelpage__inner"><section class="novelpage__main"></section></div>'
     var article_category = article.split('_')[0]
     var article_date = article.split('_')[1]
     var article_title = article.split('_')[2].split('.')[0]
@@ -149,13 +149,13 @@ if (!page && !html && !article) {
     fetch(url)
     .then(res => res.text())
     .then((out) => {
-        document.querySelector(".novelpage__title.titles").innerText = article_title
+        document.querySelector(".novelpage__title.titles").innerHTML = '<i class="las la-chess-queen"></i>'+article_title
         document.querySelector(".novelpage__main").innerHTML += '<div class="article_category"></div><div class="article_content"></div>'
         document.querySelector(".article_category").innerHTML = '<a href="./?p=blog&c='+article_category+'">' + article_category+'</a> · '+article_date
         document.querySelector(".article_content").innerHTML += marked.parse(out)
     })
 } else if (page) {
-  document.querySelector(".mainwrapper").innerHTML = '<h1 class="novelpage__title titles"></h1><div class="novelpage__inner"><section class="novelpage__main"></section></div>'
+  document.querySelector(".mainwrapper").innerHTML = '<h1 class="novelpage__title titles headingL"></h1><div class="novelpage__inner"><section class="novelpage__main"></section></div>'
   var url = "https://raw.githubusercontent.com/"+githubUserName+"/"+githubRepoName+`/main/markdown/${page}.md`
   fetch(url)
   .then(res => res.text())
@@ -163,7 +163,7 @@ if (!page && !html && !article) {
     out = out.replace('\n', '<titleendhere>')
     var title = out.split('<titleendhere>')[0].replace('# ', '')
     var content = out.split('<titleendhere>')[1]
-    document.querySelector(".novelpage__title.titles").innerHTML = title
+    document.querySelector(".novelpage__title.titles").innerHTML = '<i class="las la-chess-queen"></i>'+title
     document.querySelector(".novelpage__main").innerHTML += marked.parse(content)
   })
 }
