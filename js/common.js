@@ -93,7 +93,7 @@ if (!page && !html && !article) {
     document.querySelector(".mainwrapper").innerHTML = '<h1 class="novelpage__title titles headingL"></h1><div class="novelpage__inner"><section class="novelpage__main"></section></div>'
     document.querySelector(".novelpage__title").innerHTML = '<i class="las la-chess-queen"></i>Blog'
     if (category) {
-        document.querySelector(".novelpage__title").innerText += '/'+category
+        document.querySelector(".novelpage__title").innerHTML += '/'+category
     } 
     document.querySelector(".novelpage__inner").innerHTML += '<div class="modoru"><a href="./?p=blog">전체보기</a></div>'
     document.querySelector(".novelpage__inner").innerHTML += '<div class="article_list"></div>'
