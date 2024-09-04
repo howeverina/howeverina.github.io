@@ -836,3 +836,8 @@ section section:last-of-type {
     width: min(25vw, 360px);
   }
 }
+
+.article>a {
+  display: flex;
+  justify-content: space-between;
+}
