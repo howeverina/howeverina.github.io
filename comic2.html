@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>サイト名を入れてください</title>
+ <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/common.css">
+ <link rel="stylesheet" href="css/each.css">
+ <link rel="stylesheet"
+  href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+
+<body>
+ <div class="container">
+  <!-- ヘッダー -->
+  <header class="header">
+   <!-- メインビジュアル -->
+   <div class="mainvisual">
+    <div class="mainvisual__img">
+     <img src="images/mainvisual.jpg" alt="">
+    </div>
+    <!-- サイト名 -->
+    <h1 class="sitename"><a href="index.html">YOUR SITE NAME</a></h1>
+   </div><!-- メインビジュアルここまで -->
+
+   <!-- ハンバーガーメニュー -->
+   <button id="js-hamburger" class="hamburger"><span class="hamburger__line"></span></button>
+
+   <!-- メニュー -->
+   <nav id="js-globalnav" class="globalnav">
+    <ul class="globalnav__main">
+     <li class="globalnav__item"><a href="top.html">Top</a></li>
+     <li class="globalnav__item _has-child"><a href="novel.html">Novel</a>
+      <ul class="globalnav__child">
+       <li><a href="novel.html">Novel1</a></li>
+       <li><a href="novel.html">Novel2</a></li>
+       <li><a href="novel.html">Novel3</a></li>
+      </ul>
+     </li>
+     <li class="globalnav__item"><a href="gallery.html">Gallery</a></li>
+     <li class="globalnav__item"><a href="comic.html">Comic</a></li>
+     <li class="globalnav__item"><a href="offline.html">Offline</a></li>
+     <li class="globalnav__item"><a href="sample.html">Sample</a></li>
+    </ul>
+   </nav><!-- メニューここまで -->
+  </header><!-- ヘッダーここまで -->
+
+  <!-- メインコンテンツ -->
+  <main class="mainwrapper comic">
+
+   <!-- メイン画像 -->
+   <img src="images/116045.jpg" alt="" class="comic__mainvisual">
+   <!-- 作品タイトル -->
+   <h2 class="comic__title headingL" >偽善だらけのユートピア</h2>
+
+   <!-- 目次 -->
+   <!-- 目次ボタン -->
+   <button id="js-comicnav-btn" class="comicnav-btn">
+    <div class="arrow"></div>
+    <span>目次</span>
+   </button>
+
+   <!-- リスト -->
+   <nav id="js-comicnav" class="comicnav">
+    <p><a href="character.html">登場人物</a></p>
+    <ul class="episodelist grid">
+     <li class="episodelist__item">
+      <a href="comicpage.html">第１話</a>
+     </li>
+     <li class="episodelist__item">
+      <a href="comicpage.html">第２話</a>
+     </li>
+     <li class="episodelist__item">
+      <a href="comicpage.html">第３話</a>
+     </li>
+     <li class="episodelist__item">
+      <a href="comicpage.html">第４話</a>
+     </li>
+     <li class="episodelist__item">
+      <a href="comicpage.html">第５話</a>
+     </li>
+     <li class="episodelist__item">
+      <a href="comicpage.html">第６話</a>
+     </li>
+     <li class="episodelist__item">
+      <a href="comicpage.html">第７話</a>
+     </li>
+    </ul>
+    <p>
+     <a href="comic2.html">表紙に戻る</a>
+    </p>
+   </nav>
+   <!-- 目次ここまで -->
+
+   <!-- あらすじ -->
+   <section class="">
+    <h3 class="headingM ja">あらすじ</h3>
+    <p class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </section> <!-- あらすじここまで -->
+
+   <!-- キャラクター紹介 -->
+   <section class="">
+    <h3 class="headingM ja">登場人物</h3>
+    <ul class="charalist grid">
+     <li class="charalist__item flex">
+      <img src="images/dansei_02.png" alt="" class="charalist__img">
+      <div class="charalist__body">
+       <p class="charalist__name">苗字　名前</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime autem aut itaque, nobis cupiditate
+        necessitatibus suscipit a laborum voluptatum id veniam illo eos aliquid cum quos, voluptatem animi porro
+        deleniti.</p>
+      </div>
+     </li>
+     <li class="charalist__item flex">
+      <img src="images/josei_11.png" alt="" class="charalist__img">
+      <div class="charalist__body">
+       <p class="charalist__name">苗字　名前</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime autem aut itaque, nobis cupiditate
+        necessitatibus suscipit a laborum voluptatum id veniam illo eos aliquid cum quos, voluptatem animi porro
+        deleniti.</p>
+      </div>
+     </li>
+     <li class="charalist__item flex">
+      <img src="images/dansei_09.png" alt="" class="charalist__img">
+      <div class="charalist__body">
+       <p class="charalist__name">苗字　名前</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime autem aut itaque, nobis cupiditate
+        necessitatibus suscipit a laborum voluptatum id veniam illo eos aliquid cum quos, voluptatem animi porro
+        deleniti.</p>
+      </div>
+     </li>
+     <li class="charalist__item flex">
+      <img src="images/josei_15_02.png" alt="" class="charalist__img">
+      <div class="charalist__body">
+       <p class="charalist__name">苗字　名前</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime autem aut itaque, nobis cupiditate
+        necessitatibus suscipit a laborum voluptatum id veniam illo eos aliquid cum quos, voluptatem animi porro
+        deleniti.</p>
+      </div>
+     </li>
+     <li class="charalist__item flex">
+      <img src="http://placehold.jp/300x300.png?text=sample" alt="" class="charalist__img">
+      <div class="charalist__body">
+       <p class="charalist__name">苗字　名前</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime autem aut itaque, nobis cupiditate
+        necessitatibus suscipit a laborum voluptatum id veniam illo eos aliquid cum quos, voluptatem animi porro
+        deleniti.</p>
+      </div>
+     </li>
+    </ul>
+   </section><!-- キャラクター紹介ここまで -->
+
+   <!-- 漫画一覧 -->
+   <section class="">
+    <h3 class="headingM ja">本編連載</h3>
+    <ul class="cardlist flex">
+     <li class="cardlist__item">
+      <a href="comicpage.html">
+       <img src="images/1288152.jpg" alt="" class="cardlist__img">
+       <p class="cardlist__title">第１話　タイトル</p>
+      </a>
+     </li>
+     <li class="cardlist__item">
+      <a href="comicpage.html">
+       <img src="http://placehold.jp/300x240.png?text=sample" alt="" class="cardlist__img">
+       <p class="cardlist__title">第２話　タイトル</p>
+      </a>
+     </li>
+     <li class="cardlist__item">
+      <a href="comicpage.html">
+       <img src="http://placehold.jp/300x240.png?text=sample" alt="" class="cardlist__img">
+       <p class="cardlist__title">第３話　タイトル</p>
+      </a>
+     </li>
+     <li class="cardlist__item">
+      <a href="comicpage.html">
+       <img src="http://placehold.jp/300x240.png?text=sample" alt="" class="cardlist__img">
+       <p class="cardlist__title">第４話　タイトル</p>
+      </a>
+     </li>
+     <li class="cardlist__item">
+      <a href="comicpage.html">
+       <img src="http://placehold.jp/300x240.png?text=sample" alt="" class="cardlist__img">
+       <p class="cardlist__title">第５話　タイトル</p>
+      </a>
+     </li>
+     <li class="cardlist__item">
+      <a href="comicpage.html">
+       <img src="http://placehold.jp/300x240.png?text=sample" alt="" class="cardlist__img">
+       <p class="cardlist__title">第６話　タイトル</p>
+      </a>
+     </li>
+     <li class="cardlist__item">
+      <a href="comicpage.html">
+       <img src="http://placehold.jp/300x240.png?text=sample" alt="" class="cardlist__img">
+       <p class="cardlist__title">第７話　タイトル</p>
+      </a>
+     </li>
+    </ul>
+   </section>
+   <!-- 漫画一覧ここまで -->
+  </main><!-- メインコンテンツここまで -->
+
+  <footer class="footer right">
+   <!-- クレジット -->
+   <small">© 20xx Your site name. Designed by <a href="https://utsusemi.hiroec.com"
+     target="_blank">Utsusemi</a>.</small>
+    <!-- クレジットここまで -->
+  </footer>
+
+ </div>
+
+ <!--JavaScrip 読込-->
+ <script src="js/common.js" type="text/javascript"></script>
+</body>
+
+</html>

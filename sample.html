@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>サイト名を入れてください</title>
+ <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/common.css">
+ <link rel="stylesheet" href="css/each.css">
+ <link rel="stylesheet"
+  href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+
+<body>
+ <div class="container">
+  <!-- ヘッダー -->
+  <header class="header">
+   <!-- メインビジュアル -->
+   <div class="mainvisual">
+    <div class="mainvisual__img">
+     <img src="images/mainvisual.jpg" alt="">
+    </div>
+    <!-- サイト名 -->
+    <h1 class="sitename"><a href="index.html">YOUR SITE NAME</a></h1>
+   </div><!-- メインビジュアルここまで -->
+
+   <!-- ハンバーガーメニュー -->
+   <button id="js-hamburger" class="hamburger"><span class="hamburger__line"></span></button>
+
+   <!-- メニュー -->
+   <nav id="js-globalnav" class="globalnav">
+    <ul class="globalnav__main">
+     <li class="globalnav__item"><a href="top.html">Top</a></li>
+     <li class="globalnav__item _has-child"><a href="novel.html">Novel</a>
+      <ul class="globalnav__child">
+       <li><a href="novel.html">Novel1</a></li>
+       <li><a href="novel.html">Novel2</a></li>
+       <li><a href="novel.html">Novel3</a></li>
+      </ul>
+     </li>
+     <li class="globalnav__item"><a href="gallery.html">Gallery</a></li>
+     <li class="globalnav__item"><a href="comic.html">Comic</a></li>
+     <li class="globalnav__item"><a href="offline.html">Offline</a></li>
+     <li class="globalnav__item"><a href="sample.html">Sample</a></li>
+    </ul>
+   </nav><!-- メニューここまで -->
+  </header><!-- ヘッダーここまで -->
+
+  <!-- メインコンテンツ -->
+  <main class="mainwrapper">
+   <h2 class="headingL"><i class="las la-chess-queen"></i>Sample</h2>
+   <section>
+    <h2 class="headingM ja">文字と装飾</h2>
+    <p>&lt;p&gt;上下に余白が付きます。<br>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+     dolore magna aliqua.</p>
+    <p><a href="#">&lt;a&gt;リンク</a></p>
+    <p>
+     <strong>&lt;strong&gt;重要</strong><br>
+     <em>&lt;em&gt;強調</em><br>
+     <span class="marker">class="marker"マーカー</span><br>
+     <span class="label">class="label"ラベル</span>
+    </p>
+    <p class="right">class="right"をつけると、文字が右寄せになります</p>
+    <p class="center">class="center"をつけると、文字が中央寄せになります</p>
+
+    <h2 class="headingM ja">見出し</h2>
+    <h2 class="headingL">class="headingL"見出し<span class="ja">見出し</span></h2>
+    <h3 class="headingM">class="headingM"見出し<span class="ja">見出し</span></h3>
+    <h4 class="headingS">class="headingS"見出し<span class="ja">見出し</span></h4>
+    <h5 class="headingSS">class="headingSS"見出し<span class="ja">見出し</span></h5>
+    <p>※アルファベットはすべて自動的に大文字になります</p>
+   </section>
+
+   <section>
+    <h2 class="headingM ja">入力フォーム、ボタン</h2>
+    <input type="text" placeholder=""><br>
+    <textarea id="message" placeholder=""></textarea><br>
+    <button class="btn">送信</button>
+   </section>
+
+   <section>
+    <h2 class="headingM ja">リスト</h2>
+    <p>&lt;ul class="list"&gt;</p>
+    <ul class="list">
+     <li>リスト１</li>
+     <li>リスト２</li>
+     <li>リスト３</li>
+    </ul>
+    <p>&lt;ol class="list-number"&gt;</p>
+    <ol class="list-number">
+     <li>リスト１</li>
+     <li>リスト２</li>
+     <li>リスト３</li>
+    </ol>
+
+    &lt;dl class="gridlist"&gt;
+    <dl class="gridlist">
+     <dt class="gridlist__label">&lt;dt class="gridlist__label"&gt;項目</dt>
+     <dd class="gridlist__text">&lt;dd class="gridlist__text"&gt;説明文。Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua.</dd>
+     <dt class="gridlist__label">&lt;dt class="gridlist__label"&gt;項目</dt>
+     <dd class="gridlist__text">&lt;dd class="gridlist__text"&gt;説明文。Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua.</dd>
+    </dl>
+   </section>
+
+   <section>
+    <h2 class="headingM ja">枠囲みボックス</h2>
+    <p>&lt;div class="box"&gt;</p>
+    <div class="box">
+     <h3 class="headingSS" class="box__title">タイトル</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+    </div>
+   </section>
+
+   <section>
+    <h2 class="headingM ja">レイアウト</h2>
+    <h3 class="headingS">class=“flex”での横並び</h3>
+    <h4 class="headingSS">文字</h4>
+    <div class="flex">
+     <div class="flex__item">サンプルテキスト</div>
+     <div class="flex__item">サンプルテキストサンプルテキスト</div>
+     <div class="flex__item">サンプルテキスト</div>
+     <div class="flex__item">サンプルテキストサンプルテキスト</div>
+     <div class="flex__item">サンプルテキストサンプルテキスト</div>
+     <div class="flex__item">サンプルテキストサンプルテキスト</div>
+    </div>
+    <h4 class="headingSS">画像</h4>
+    <div class="flex">
+     <div class="flex__item"><img src="http://placehold.jp/200x200.png?text=sample" alt=""></div>
+     <div class="flex__item"><img src="http://placehold.jp/200x200.png?text=sample" alt=""></div>
+     <div class="flex__item"><img src="http://placehold.jp/200x200.png?text=sample" alt=""></div>
+     <div class="flex__item"><img src="http://placehold.jp/200x200.png?text=sample" alt=""></div>
+     <div class="flex__item"><img src="http://placehold.jp/200x200.png?text=sample" alt=""></div>
+     <div class="flex__item"><img src="http://placehold.jp/200x200.png?text=sample" alt=""></div>
+     <div class="flex__item"><img src="http://placehold.jp/200x200.png?text=sample" alt=""></div>
+    </div>
+
+    <h3 class="headingS">class=“grid”での横並び</h3>
+    <h4 class="headingSS">文字</h4>
+    <div class="grid">
+     <div class="grid__item">サンプルテキスト</div>
+     <div class="grid__item">サンプルテキストサンプルテキスト</div>
+     <div class="grid__item">サンプルテキスト</div>
+     <div class="grid__item">サンプルテキストサンプルテキスト</div>
+     <div class="grid__item">サンプルテキストサンプルテキスト</div>
+     <div class="grid__item">サンプルテキストサンプルテキスト</div>
+    </div>
+    <h4 class="headingSS">画像</h4>
+    <div class="grid">
+     <div class="grid__item"><img src="http://placehold.jp/800x600.png?text=sample" alt=""></div>
+     <div class="grid__item"><img src="http://placehold.jp/800x600.png?text=sample" alt=""></div>
+     <div class="grid__item"><img src="http://placehold.jp/800x600.png?text=sample" alt=""></div>
+     <div class="grid__item"><img src="http://placehold.jp/800x600.png?text=sample" alt=""></div>
+     <div class="grid__item"><img src="http://placehold.jp/800x600.png?text=sample" alt=""></div>
+     <div class="grid__item"><img src="http://placehold.jp/800x600.png?text=sample" alt=""></div>
+     <div class="grid__item"><img src="http://placehold.jp/800x600.png?text=sample" alt=""></div>
+    </div>
+   </section>
+  </main><!-- メインコンテンツここまで -->
+
+  <footer class="footer right">
+   <!-- クレジット -->
+   <small">© 20xx Your site name. Designed by <a href="https://utsusemi.hiroec.com"
+     target="_blank">Utsusemi</a>.</small>
+    <!-- クレジットここまで -->
+  </footer>
+
+ </div>
+
+ <!--JavaScrip 読込-->
+ <script src="js/common.js" type="text/javascript"></script>
+</body>
+
+</html>
