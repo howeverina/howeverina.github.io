@@ -95,8 +95,8 @@ if (!page && !html && !article) {
     if (category) {
         document.querySelector(".novelpage__title").innerText += '/'+category
     } 
-    document.querySelector(".page_content").innerHTML += '<div class="modoru"><a href="./?p=blog">전체보기</a></div>'
-    document.querySelector(".page_content").innerHTML += '<div class="article_list"></div>'
+    document.querySelector(".novelpage__inner").innerHTML += '<div class="modoru"><a href="./?p=blog">전체보기</a></div>'
+    document.querySelector(".novelpage__inner").innerHTML += '<div class="article_list"></div>'
     var url = "https://api.github.com/repos/"+githubUserName+"/"+githubRepoName+"/git/trees/main"
     fetch(url)
     .then(res => res.text())
