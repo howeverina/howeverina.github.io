@@ -1,20 +1,37 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&family=Zen+Kaku+Gothic+New&display=swap");
+@font-face {
+  font-family: 'IBMPlexSansKR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IBMPlexSansKR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 /*－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 
 全ページ共通
 
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+
+:root {
+  --bg: #e0e9f2;
+  --accent: #7087A4;
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+  font-family: 'IBMPlexSansKR', "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
   font-size: 1.6rem;
   color: #333;
-  background-color: #e0e9f2;
+  background-color: var(--bg);
   letter-spacing: 2px;
   line-height: 1.8;
 }
@@ -48,7 +65,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+  font-family: 'IBMPlexSansKR', "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
   letter-spacing: 6px;
   font-weight: normal;
   text-transform: uppercase;
@@ -79,7 +96,7 @@ h5 {
   width: 100%;
   height: 18px;
   background-size: 18px 18px;
-  background-image: repeating-conic-gradient(from 0deg, #e0e9f2 0deg 90deg, #fff 90deg 180deg);
+  background-image: repeating-conic-gradient(from 0deg, var(--bg) 0deg 90deg, #fff 90deg 180deg);
   background-repeat: repeat;
 }
 .headingL.ja {
@@ -90,7 +107,7 @@ h5 {
 .headingM {
   font-size: clamp(2.2rem, 2.08rem + 0.6vw, 2.8rem);
   margin: clamp(3rem, 2.8rem + 1vw, 4rem) 0;
-  background-color: #e0e9f2;
+  background-color: var(--bg);
   padding: 6px 20px 0;
 }
 .headingM.ja {
@@ -113,7 +130,7 @@ h5 {
   width: 20px;
   height: 20px;
   background-size: 20px 20px;
-  background-image: repeating-conic-gradient(from 0deg, #e0e9f2 0deg 90deg, #7087A4 90deg 180deg);
+  background-image: repeating-conic-gradient(from 0deg, var(--bg) 0deg 90deg, var(--accent) 90deg 180deg);
 }
 .headingS.ja {
   font-size: clamp(1.6rem, 1.286rem + 0.76vw, 1.8rem);
@@ -135,14 +152,14 @@ h5 {
 }
 
 .marker {
-  background: linear-gradient(transparent 60%, #e0e9f2 60%);
+  background: linear-gradient(transparent 60%, var(--bg) 60%);
 }
 
 .label {
   display: block;
   margin: 20px 0;
   padding: 2px 10px;
-  background-color: #7087A4;
+  background-color: var(--accent);
   color: #fff;
   width: -moz-fit-content;
   width: fit-content;
@@ -155,9 +172,9 @@ h5 {
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
 a {
   color: inherit;
-  text-decoration-color: #7087A4;
+  text-decoration-color: var(--accent);
   text-underline-offset: 4px;
-  -moz-text-decoration-color: #7087A4;
+  -moz-text-decoration-color: var(--accent);
 }
 
 @media (hover: hover) {
@@ -174,7 +191,7 @@ a {
 .la,
 .las {
   font-size: 1.2em;
-  color: #7087A4;
+  color: var(--accent);
   position: relative;
   top: 2px;
 }
@@ -183,7 +200,7 @@ a {
 .arrow {
   width: 20px;
   height: 20px;
-  border: 2px solid #e0e9f2;
+  border: 2px solid var(--bg);
   border-bottom: 0;
   border-left: 0;
   transform: rotate(45deg);
@@ -205,7 +222,7 @@ textarea {
      -moz-appearance: none;
           appearance: none;
   padding: 10px 20px 8px 20px;
-  border: 1px solid #e0e9f2;
+  border: 1px solid var(--bg);
   margin: 10px 0;
 }
 
@@ -215,12 +232,12 @@ textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #7087A4;
+  background-color: var(--accent);
   color: #fff;
   text-align: center;
   text-decoration: none;
   padding: 3px 10px;
-  border: 1px solid #7087A4;
+  border: 1px solid var(--accent);
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -229,7 +246,7 @@ textarea {
 }
 .btn:hover {
   cursor: pointer;
-  background-color: #e0e9f2;
+  background-color: var(--bg);
   color: #333;
 }
 
@@ -255,7 +272,7 @@ textarea {
   display: block;
   width: 8px;
   height: 8px;
-  background-color: #e0e9f2;
+  background-color: var(--bg);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -289,7 +306,7 @@ textarea {
 .gridlist .gridlist__label {
   display: flex;
   align-items: center;
-  background-color: #e0e9f2;
+  background-color: var(--bg);
 }
 
 /* スマホ */
@@ -305,7 +322,7 @@ textarea {
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
 .box {
   position: relative;
-  border: 1px solid #7087A4;
+  border: 1px solid var(--accent);
   border-left: none;
   border-right: none;
   margin: 80px;
@@ -318,7 +335,7 @@ textarea {
   width: 100%;
   height: 18px;
   background-size: 18px 18px;
-  background-image: repeating-conic-gradient(from 0deg, #e0e9f2 0deg 90deg, #fff 90deg 180deg);
+  background-image: repeating-conic-gradient(from 0deg, var(--bg) 0deg 90deg, #fff 90deg 180deg);
   background-repeat: repeat;
 }
 .box::before {
@@ -352,7 +369,7 @@ SNSアイコンリスト
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7087A4;
+  background-color: var(--accent);
   border-radius: 50%;
   transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -462,7 +479,7 @@ SNSアイコンリスト
     max-width: 1160px;
     padding: 60px;
     margin-left: min(25vw, 360px);
-    border-left: 1px solid #7087A4;
+    border-left: 1px solid var(--accent);
   }
   .container .footer {
     position: fixed;
@@ -539,7 +556,7 @@ section section:last-of-type {
   align-items: center;
   width: 50px;
   height: 50px;
-  background-color: #7087A4;
+  background-color: var(--accent);
   border: none;
   cursor: pointer;
   z-index: 999;
@@ -590,14 +607,14 @@ section section:last-of-type {
 
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
 .globalnav {
-  font-family: "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+  font-family: 'IBMPlexSansKR', "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
   font-size: 2rem;
   text-transform: uppercase;
 }
 
 .globalnav__main .globalnav__item {
   position: relative;
-  border-bottom: 1px solid #e0e9f2;
+  border-bottom: 1px solid var(--bg);
 }
 .globalnav__main .globalnav__item a {
   display: block;
@@ -612,11 +629,11 @@ section section:last-of-type {
 }
 .globalnav__main .globalnav__item a:hover {
   color: #fff;
-  background-color: #7087A4;
+  background-color: var(--accent);
 }
 .globalnav__main .globalnav__item._has-child:hover:hover {
   color: #fff;
-  background-color: #7087A4;
+  background-color: var(--accent);
 }
 .globalnav__main .globalnav__item._has-child:hover .globalnav__child {
   visibility: visible;
@@ -632,7 +649,7 @@ section section:last-of-type {
   position: absolute;
   top: 0;
   left: 80%;
-  background-color: #e0e9f2;
+  background-color: var(--bg);
   color: #333;
   visibility: hidden;
   opacity: 0;
@@ -648,7 +665,7 @@ section section:last-of-type {
   height: 0px;
   z-index: 1;
   border-width: 31px 0px 31px 30px;
-  border-color: transparent transparent transparent #7087A4;
+  border-color: transparent transparent transparent var(--accent);
   border-style: solid;
 }
 .globalnav__main .globalnav__child li a {
@@ -667,7 +684,7 @@ section section:last-of-type {
     height: 100dvh;
     display: flex;
     align-items: center;
-    background-color: #e0e9f2;
+    background-color: var(--bg);
     opacity: 0;
     transform: translateX(100%);
     transition: 0.4s;
@@ -700,7 +717,7 @@ section section:last-of-type {
 
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
 .submenu__wrapper {
-  background-color: #e0e9f2;
+  background-color: var(--bg);
 }
 
 .submenu {
@@ -756,7 +773,7 @@ section section:last-of-type {
   content: "";
   display: block;
   height: 1px;
-  background: #7087A4;
+  background: var(--accent);
 }
 
 .submenu__grandchild li {
@@ -766,7 +783,7 @@ section section:last-of-type {
   content: "";
   display: block;
   height: 1px;
-  border-bottom: 1px dashed #e0e9f2;
+  border-bottom: 1px dashed var(--bg);
 }
 
 @media screen and (max-width: 520px) {
@@ -791,7 +808,7 @@ section section:last-of-type {
   align-items: center;
   width: 50px;
   height: 50px;
-  background-color: #7087A4;
+  background-color: var(--accent);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -816,7 +833,7 @@ section section:last-of-type {
 
 @media (hover: hover) {
   .pageup:hover {
-    background-color: #e0e9f2;
+    background-color: var(--bg);
   }
 }
 /*－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
@@ -825,7 +842,7 @@ section section:last-of-type {
 
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
 .footer {
-  font-family: "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+  font-family: 'IBMPlexSansKR', "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
   font-size: 1.2rem;
   padding: 10px;
 }

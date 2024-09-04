@@ -43,7 +43,7 @@
   padding: 8px 0;
 }
 .update__item:not(:last-child) {
-  border-bottom: 1px dashed #e0e9f2;
+  border-bottom: 1px dashed var(--bg);
 }
 
 /* スマホ */
@@ -165,10 +165,10 @@ LINK
 .novellist__title {
   display: inline-block;
   font-size: 1.6rem;
-  background-color: #e0e9f2;
+  background-color: var(--bg);
   padding: 4px 10px;
   background-size: 18px 18px;
-  background-image: repeating-conic-gradient(from 0deg, #e0e9f2 0deg 90deg, #fff 90deg 180deg);
+  background-image: repeating-conic-gradient(from 0deg, var(--bg) 0deg 90deg, #fff 90deg 180deg);
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 1025px), print {
@@ -183,7 +183,7 @@ LINK
 
 /* 数字プラス小タイトルの数字の色 */
 .novellist__number {
-  color: #7087A4;
+  color: var(--accent);
   margin-right: 10px;
 }
 
@@ -350,10 +350,10 @@ COMIC
      object-fit: cover;
 }
 .comiclist__item .comiclist__body .comiclist__title {
-  background-color: #e0e9f2;
+  background-color: var(--bg);
   padding: 10px 10px 2px;
   background-size: 18px 18px;
-  background-image: repeating-conic-gradient(from 0deg, #e0e9f2 0deg 90deg, #fff 90deg 180deg);
+  background-image: repeating-conic-gradient(from 0deg, var(--bg) 0deg 90deg, #fff 90deg 180deg);
   background-repeat: no-repeat;
 }
 
@@ -405,7 +405,7 @@ COMIC
   font-size: 1.2rem;
   width: 50px;
   height: 50px;
-  background-color: #7087A4;
+  background-color: var(--accent);
   color: #fff;
   border: 0;
   padding-top: 4px;
@@ -431,7 +431,7 @@ COMIC
   right: 0;
   font-size: smaller;
   padding: 70px 40px 70px;
-  background-color: #e0e9f2;
+  background-color: var(--bg);
   transform: translateX(100%);
   transition: 0.4s;
   height: 100vh;
