@@ -67,7 +67,7 @@ h4,
 h5 {
   font-family: 'IBMPlexSansKR', "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
   letter-spacing: 6px;
-  font-weight: normal;
+  font-weight: 700;
   text-transform: uppercase;
   word-break: break-all;
 }
@@ -385,13 +385,13 @@ SNSアイコンリスト
   color: #fff;
 }
 .snslist .snslist__item:hover.twitter {
-  background-color: #1DA1F2;
+  background-color: #acacac;
 }
 .snslist .snslist__item:hover.instagram {
-  background-color: #CF2E92;
+  background-color: #925fc2;
 }
 .snslist .snslist__item:hover.facebook {
-  background-color: #4267b2;
+  background-color: #47ff87;
 }
 .snslist .snslist__item:hover.youtube {
   background-color: #DA1725;
