@@ -12,6 +12,13 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'HakgyoansimBunpilR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimBunpilR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 /*－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 
 全ページ共通
@@ -65,7 +72,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'IBMPlexSansKR', "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+  font-family: 'HakgyoansimBunpilR', "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
   letter-spacing: 6px;
   font-weight: 700;
   text-transform: uppercase;
@@ -610,7 +617,7 @@ section section:last-of-type {
 
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
 .globalnav {
-  font-family: 'IBMPlexSansKR', "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+  font-family: 'HakgyoansimBunpilR', "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -845,7 +852,7 @@ section section:last-of-type {
 
 －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
 .footer {
-  font-family: 'IBMPlexSansKR', "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+  font-family: 'HakgyoansimBunpilR', "Yanone Kaffeesatz", "Zen Kaku Gothic New", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
   font-size: 1.2rem;
   padding: 10px;
 }
