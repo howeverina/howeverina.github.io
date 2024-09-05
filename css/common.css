@@ -381,6 +381,8 @@ SNSアイコンリスト
   margin: 6px 1px 3px 3px;
   font-size: 2rem;
   color: #fff !important;
+  position: relative;
+  top: 0 !important;
 }
 .snslist .snslist__item a {
   color: #fff;
