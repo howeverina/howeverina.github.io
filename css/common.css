@@ -377,9 +377,10 @@ SNSアイコンリスト
   -ms-transition: 0.2s;
   -moz-transition: 0.2s;
 }
-.snslist .snslist__item .lab {
+.snslist .snslist__item .lab, .snslist .snslist__item .las {
   margin: 6px 1px 3px 3px;
   font-size: 2rem;
+  color: #fff;
 }
 .snslist .snslist__item a {
   color: #fff;
