@@ -21,7 +21,7 @@ tags: [Live2D, 버튜버]
 
 > 저예산, 저사양 유저를 겨냥한 움직이는 버츄얼 캐릭터
 
-![alt text](image.png)
+![alt text](https://media.serafuku.moe/local_content/original/9aa6b144-2492-42ba-817f-44d472772b6f.webp)
 
 **Browser + GIfTalk + Lightweight Live2D**
 
