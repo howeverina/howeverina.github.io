@@ -66,7 +66,7 @@ FeatherTalk(페더톡)은 고성능 장비 없이도 간단하게 사용할 수 
 
 ## 📺 데모 영상
 
-{% include embed/youtube.html id='0--\_v3nSYXo' %}
+{% include embed/youtube.html id='0--_v3nSYXo' %}
 
 ---
 
