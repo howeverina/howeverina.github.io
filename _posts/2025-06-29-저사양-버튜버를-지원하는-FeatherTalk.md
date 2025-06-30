@@ -5,9 +5,12 @@ author: However Ina
 date: 2025-06-29 21:33:00 +0900
 categories: [3_개발, 웹]
 tags: [Live2D, 버튜버]
+image:
+  path: https://media.serafuku.moe/local_content/original/4ee8c6f2-c4d8-43c1-b70d-e326ee2b3ed8.gif
+  alt: 페더톡 FetherTalk
 ---
 
-# FeatherTalk
+# Feather-Talk
 
 > **저예산, 저사양 유저를 위한 가벼운 Live2D 스타일 버츄얼 캐릭터 표현 도구**
 
@@ -15,7 +18,7 @@ tags: [Live2D, 버튜버]
 
 ![FeatherTalk demo](https://media.serafuku.moe/local_content/original/4ee8c6f2-c4d8-43c1-b70d-e326ee2b3ed8.gif)
 
-FeatherTalk(페더톡)은 고성능 장비 없이도 간단하게 사용할 수 있는 **브라우저 기반 버츄얼 캐릭터 표현 도구**입니다.
+Feather-Talk(페더톡)은 고성능 장비 없이도 간단하게 사용할 수 있는 **브라우저 기반 버츄얼 캐릭터 표현 도구**입니다.
 
 웹캠이나 고사양 트래킹 없이도, 마우스 움직임과 자동 애니메이션을 통해 자연스럽고 입체감 있는 캐릭터 연출이 가능합니다.
 
