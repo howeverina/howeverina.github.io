@@ -3,7 +3,23 @@ body,html{
     overscroll-behavior:none;
     margin:0;
     padding:0;
-    background-color: #ffbf51;
+    background-color: #24284b;
+    background-image: url(https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+
+    flex-shrink: 0;
+}
+
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @-webkit-keyframes slidetounlock{
@@ -40,7 +56,7 @@ body,html{
 
 .flex-h-center{
     display:flex;
-    justify-content:center
+    justify-content:center;
 }
 
 .item-center{
@@ -118,7 +134,7 @@ body,html{
 }
 
 .font-inter{
-    font-family:Inter,sans-serif
+    font-family:'ONE-Mobile-POP', Inter,sans-serif
 }
 .font-weight-500{
     font-weight:500
@@ -156,6 +172,11 @@ body,html{
     border-radius: 50%;
 }
 
+.page-title-24 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .page-title {
     font-size: 18px;
     font-weight: 700;
@@ -172,9 +193,9 @@ body,html{
 }
 
 .page-item-each {
-    color: #1F365C;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    color: #616975;
+    font-family: 'ONE-Mobile-POP', sans-serif;
+    font-size: 18px;
     font-weight: 500;
     text-transform: none;
     border-radius: 8px;
@@ -211,7 +232,7 @@ body,html{
 }
 
 .page-text-font {
-    font-family: 'Inter', sans-serif;
+    font-family: 'ONE-Mobile-POP', sans-serif;
     text-transform: none;
 }
 
@@ -258,7 +279,7 @@ body,html{
 }
 .page-overlay-btn{
     text-decoration:none;
-    font-family:Inter,sans-serif;
+    font-family:'ONE-Mobile-POP',sans-serif;
     background:transparent;
     padding:10px 30px;
     border-radius:6px;
@@ -268,7 +289,7 @@ body,html{
 }
 .page-overlay-title{
     font-size:30px;
-    font-family:sans-serif
+    font-family:'ONE-Mobile-POP', sans-serif;
 }
 
 .page-overlay-text{
@@ -306,9 +327,8 @@ body,html{
 }
 
 .page-full-wrap{
-    width:680px;
+    width:480px;
     z-index:10;
-    padding-bottom:176px
 }
 .page-item-wrap{
     transition:transform .15s cubic-bezier(.17,.67,.29,2.71) 0s
@@ -563,7 +583,7 @@ body,html{
 }
 
 .subsc-email::-moz-placeholder{
-    font-family:Inter,sans-serif;
+    font-family:'ONE-Mobile-POP', Inter,sans-serif;
     font-size:14px;
     line-height:19px;
     color:hsla(0,0%,100%,.5)
@@ -571,14 +591,14 @@ body,html{
 }
 
 .subsc-email:-ms-input-placeholder{
-    font-family:Inter,sans-serif;
+    font-family:'ONE-Mobile-POP', Inter,sans-serif;
     font-size:14px;
     line-height:19px;
     color:hsla(0,0%,100%,.5)
 }
 
 .subsc-email::placeholder{
-    font-family:Inter,sans-serif;
+    font-family:'ONE-Mobile-POP', Inter,sans-serif;
     font-size:14px;
     line-height:19px;
     color:hsla(0,0%,100%,.5)
@@ -794,7 +814,9 @@ body,html{
 
 @media (max-width:768px){
     .page-full-wrap{
-        width:90%
+        width: 480px;
+        max-width:calc(100% - 20px);
+        margin: 10px;
     }
     .embed-wrap-inside iframe{
         width:100%;
@@ -805,20 +827,20 @@ body,html{
         margin:16px 0
     }
     .embed-wrap-inside:after{
-        width:93%
+        width:100%
     }
 }
 
 @media (max-width:480px){
     .campaign-main-wrap{
         width:100%;
-        padding:0 24px
+        padding:0 24px;
     }
     .xs-hidden{
         display:none
     }
     .xs-w-100{
-        width:100%
+        width:100%;
     }
     .xs-w-150{
         width:150px
@@ -875,7 +897,7 @@ body,html{
 
 @media (max-width:400px){
     .embed-wrap-inside:after{
-        width:90%
+        width:100%
     }
 }
 
